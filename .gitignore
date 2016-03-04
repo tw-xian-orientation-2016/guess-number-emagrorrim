@@ -32,6 +32,7 @@ Temporary Items
 
 # Package Files #
 *.jar
+lib/*.lib
 *.war
 *.ear
 
