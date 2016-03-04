@@ -7,10 +7,22 @@ public class Compare_Number_Test {
 
     @Test
     public void has_no_right_number_no_right_place() {
+
         CompareNumber compareNumber = new CompareNumber();
 
         assertThat(compareNumber.compare("1234", "5678"), is("0A0B"));
     }
+
+    @Test
+    public void has_right_number_in_wrong_place() {
+
+        CompareNumber compareNumber = new CompareNumber();
+
+        assertThat(compareNumber.compare("1234", "4321"), is("0A4B"));
+    }
+
+    
+
 
 
 }

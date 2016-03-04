@@ -7,10 +7,19 @@ public class CompareNumber {
     }
 
     private Integer getCountA(String num1, String num2) {
+
         return 0;
     }
 
     private Integer getCountB(String num1, String num2) {
-        return 0;
+        int count = 0;
+
+        for (int i = 0; i < num2.length(); i++) {
+            if (num1.indexOf(num2.charAt(i)) >= 0) {
+                count ++;
+            }
+        }
+
+        return count;
     }
 }
