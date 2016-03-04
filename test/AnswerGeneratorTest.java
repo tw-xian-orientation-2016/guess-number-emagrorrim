@@ -19,7 +19,7 @@ public class AnswerGeneratorTest {
 
     @Test
     public void generate_no_repeated_random_answer() {
-        
+
 
         when(random.nextInt(10)).thenReturn(1,2,2,3,4);
 
